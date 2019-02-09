@@ -9,11 +9,14 @@
         <div class="card-body">
           <h5 class="card-title">{{ character.name }} </h5>
           <p class="card-text">
+            <span v-if="character.male"> Gender: Male </span>
+            <span v-if="!character.male"> Gender: Female </span>
+            <br>
             House: {{ character.house }}
           </p>
         </div>
          <ul class="list-group list-group-flush">
-          <li class="list-group-item" style="background-color: #fafafa; color: #111111;">Books</li>
+          <li class="list-group-item" style="background-color: #fafafa; color: blue;">Books</li>
         </ul>
         <ul class="list-group list-group-flush" v-for="book in character.books">
           <li class="list-group-item">{{ book }}</li>
