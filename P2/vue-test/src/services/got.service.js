@@ -27,6 +27,14 @@ export function listsAllCharacters () {
  */
 export function getACharacter (id) {
   // CODE HERE
+  return mainService.get(`/characters/byId/${id}`).then((res) => {
+    return res.data
+  }).catch((error) => {
+    console.error(error)
+    return {
+      error: error
+    }
+  })
 }
 
 export default gotService

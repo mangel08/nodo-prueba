@@ -1,0 +1,66 @@
+// Importar fuente personalizada de Google
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+// Anular / establecer variables de color
+$blanco: #fff;
+$negro: #000;
+$verde: #00e389;
+$azul: #3399ff;
+$naranja: #f26c22;
+$amarillo: #ffd925;
+$rojo: #e5001e;
+
+// Crear escala de grises
+$gris-oscuro: #292b2c;
+$gris: #3f3f3f;
+$luz-gris: #7e7e7e;
+$gris-encendedor: #ededed;
+$gray-lightest: #fafafa;
+
+// Establecer los colores de la marca.
+$primario: $azul;
+$éxito: $verde;
+$info: $amarillo;
+$advertencia: $naranja;
+$peligro: $rojo;
+
+// Anular los colores de los botones
+$btn-info-color: oscurecer ($info, 45);
+
+// Anular los colores de fondo de alerta
+$state-success-bg: lighten ($success, 30);
+$state-info-bg: aligerar ($info, 30);
+$state-warning-bg: aligerar ($warning, 30);
+$state-danger-bg: aligerar ($danger, 45);
+
+// Anular los colores del texto de alerta
+$state-success-text: darken ($success, 30);
+$estado-info-texto: oscurecer ($info, 30);
+$state-warning-text: darken ($warning, 30);
+$estado-peligro-texto: oscurecer ($peligro, 10);
+
+// Anular el relleno de las insignias (duplicado porque, de lo contrario, demasiado abarrotado)
+$badge-padding-x: 0.8em;
+$badge-padding-y: 0.4em;
+
+// No hagas las insignias normales en lugar de negrita
+$badge-font-weight: normal;
+
+// Anular fuentes
+$font-family-sans-serif: 'Raleway',
+sans-serif;
+$font-family-serif: Georgia,
+'Times New Roman',
+Times,
+serif;
+$font-family-monospace: Menlo,
+Mónaco,
+Consolas,
+'Liberation Mono',
+'Courier New',
+monospace;
+$font-family-base: $font-family-sans-serif;
+
+// Establecer opciones globales
+$enable-shadows: falso;
+$enable-gradients: true;

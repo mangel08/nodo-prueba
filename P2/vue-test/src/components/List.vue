@@ -44,6 +44,7 @@
         .then(res => {
           this.characters = res
           this.isLoading = false
+          console.log(res)
         })
     },
 
@@ -59,6 +60,7 @@
        */
       goToDetail(id) {
         // CODE HERE
+        this.$router.push({ name: 'detail', params: { id: id } })
       }
     }
   }
